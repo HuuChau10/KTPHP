@@ -5,7 +5,8 @@ class NganhHoc {
     private $db;
 
     public function __construct() {
-        $this->db = (new Database())->conn;
+        $database = new Database();
+        $this->db = $database->getConnection();
     }
 
     public function getAll() {

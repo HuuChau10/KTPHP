@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_POST['MaNganh']
         ];
         $svController->create($data);
-        header("Location: index.php");
+        header("Location: http://127.0.0.1/BT%20PHP/KiemTra/index.php");
         exit();
     } else {
         echo "Lỗi khi tải ảnh lên.";
@@ -56,6 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </select><br>
         <button type="submit">Thêm</button>
     </form>
-    <a href="index.php">Quay lại</a>
+    <a href="http://127.0.0.1/BT%20PHP/KiemTra/index.php">Quay lại</a>
 </body>
 </html>

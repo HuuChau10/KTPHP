@@ -15,7 +15,7 @@ if (isset($_GET['id'])) {
             unlink($image_path);
         }
 
-        header("Location: index.php");
+        header("Location: http://127.0.0.1/BT%20PHP/KiemTra/index.php");
         exit();
     } else {
         echo "Không tìm thấy sinh viên.";

@@ -5,7 +5,8 @@ class SinhVien {
     private $db;
 
     public function __construct() {
-        $this->db = new PDO("mysql:host=localhost;dbname=your_database", "root", "");
+        $database = new Database();
+        $this->db = $database->getConnection();
     }
 
     public function getAll() {
